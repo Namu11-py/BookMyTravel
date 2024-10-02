@@ -13,19 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <style>
-    .price {
-      align-items: center;
-    }
-  </style>
 </head>
 
 <body>
   <!--Menu start-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid mt-3">
-      <a class="navbar-brand me-auto" href="#"><img src="img\logo1-removebg-preview.png" width="200px"></a>
+      <!--img\logo1-removebg-preview.png-->
+      <h2 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i><span style="color: blue;">B</span>ook<span
+          style="color: blue;">M</span>y<span style="color: blue;">T</span>ravel</h2>
+      <!--<a class="navbar-brand me-auto" href="#"><img src="img/logo1-removebg-preview.png" width="200px"></a>-->
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
@@ -56,47 +53,40 @@
           </ul>
         </div>
       </div>
-      <!--
+
       <a href="#" class="login-button">Login</a>
       <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop">
         <span class="navbar-toggler-icon"></span>
-      </button>-->
-      <!---->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-        data-bs-whatever="@mdo">Login</button>
-
+      </button>
+      <!-- Modal -->
+       <!--
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="c-name">
-                </div>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Mobile:</label>
-                  <input type="text" class="form-control" id="mobile">
-                </div>
-
-              </form>
+              ...
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
+      </div>-->
+      <!--modal e-->
       </div>
-      <!---->
-    </div>
   </nav>
   <!--Menu end-->
+
 
   <!--Hero section end-->
   <section class="hero-section">
@@ -105,7 +95,7 @@
 
       <h1><span style="color: blue;">B</span>ook<span style="color: blue;">M</span>y<span
           style="color: blue;">T</span>ravel</h1>
-      <h2>Yatra ka saathi bhi, Jeevan ka raahi bhi.</h2>
+      <h2 id="element"></h2>
       <div class="position-relative w-75 mx-auto animated slideInDown mt-4">
         <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Leh">
         <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2"
@@ -268,11 +258,13 @@
     </div>
   </div>
   <!--booking End-->
-<br>
-<br>
+  <br>
 
-  <!--card start-->
+
+  <!--card start ind-->
   <h2 class="text-primary">About Vacation Tour Packages:</h2>
+  <h3 class="text-primary text-center">India</h3>
+
 
   <div id="card" class="container mt-3">
     <div class="row">
@@ -337,7 +329,7 @@
               <span>Per Person</span>
             </div>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">View Details</a>
+            <a href="hampi.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
       </div>
@@ -368,7 +360,114 @@
               <span>Per Person</span>
             </div>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">View Details</a>
+            <a href="leh.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--card end-->
+  <br>
+  <!--card start ind-->
+
+  <h3 class="text-primary text-center">World</h3>
+
+  <div id="card" class="container mt-3">
+    <div class="row">
+      <div class="col mt-5" align="center">
+        <div class="card" style="width: 18rem;">
+          <img src="img/paris.jpg" class="card-img-top" alt="..." style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title  text-primary"><b>Paris, France</b></h4>
+            <div><i class="fa-solid fa-location-dot text-primary"></i> Travel <b>9</b> Days <b>4</b> Country <b>11</b>
+              City</div>
+            <div>
+              <span><i class="fa fa-1x fa-plane text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-hotel text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-car text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-person-hiking text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-utensils text-primary mb-2"></i></span>
+            </div>
+
+            <div>
+
+              <!--<span style="background-color: orange; text-align: left;"><i class="fa-solid fa-star"></i> <b>5</b></span>-->
+
+              <span></i><b>
+                  <h4>2,00,000 <i class="fa fa-1x fa-indian-rupee-sign"></i></h4>
+                </b></span>
+            </div>
+            <div>
+              <span>Per Person</span>
+            </div>
+            <p class="card-text"></p>
+            <a href="paris.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5" align="center">
+        <div class="card" style="width: 18rem; ">
+          <img src="img/usa.jpg" class="card-img-top" alt="..." style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title text-primary"><b>New York</b></h4>
+            <div><i class="fa-solid text-primary fa-location-dot"></i> Travel <b>10</b> Days <b>3</b> Country <b>10</b>
+              City</div>
+            <div>
+              <span><i class="fa fa-1x fa-plane text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-hotel text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-car text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-person-hiking text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-utensils text-primary mb-2"></i></span>
+            </div>
+
+            <div>
+
+              <!--<span style="background-color: orange; text-align: left;"><i class="fa-solid fa-star"></i> <b>5</b></span>-->
+
+              <span></i><b>
+                  <h4>2,00,000 <i class="fa fa-1x fa-indian-rupee-sign"></i></h4>
+                </b></span>
+
+            </div>
+            <div>
+              <span>Per Person</span>
+            </div>
+            <p class="card-text"></p>
+            <a href="newyork.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mt-5" align="center">
+        <div class="card" style="width: 18rem;">
+          <img src="img/japan.jpg" class="card-img-top" alt="..." style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title text-primary"><b>Japan </b></h4>
+            <div><i class="fa-solid text-primary fa-location-dot"></i> Travel <b>12</b> Days <b>4</b> Country <b>10</b>
+              City</div>
+            <div>
+              <span><i class="fa fa-1x fa-plane text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-hotel text-primary mb-2"></i> </span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-car text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-person-hiking text-primary mb-2"></i></span>&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-1x fa-utensils text-primary mb-2"></i></span>
+            </div>
+
+            <div>
+
+              <!--<span style="background-color: orange; text-align: left;"><i class="fa-solid fa-star"></i> <b>5</b></span>-->
+
+              <span></i><b>
+                  <h4>3,00,000 <i class="fa fa-1x fa-indian-rupee-sign"></i></h4>
+                </b></span>
+
+            </div>
+            <div>
+              <span>Per Person</span>
+            </div>
+            <p class="card-text"></p>
+            <a href="japan.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
       </div>
@@ -391,7 +490,7 @@
           <div class="mb-3 form-floating">
             <input type="text" class="form-control" id="mobile" placeholder="Mobile">
             <label for="mobile">Mobile</label>
-            
+
           </div>
           <div class="mb-3 form-floating">
             <input type="text" class="form-control" id="mail" placeholder="Email">
@@ -400,19 +499,19 @@
           </div>
           <div class="mb-3 form-floating">
             <textarea class="form-control bg-transparent" placeholder="Message" id="message"
-              style="height: 100px" ></textarea>
-              <label for="message">Message</label>
+              style="height: 100px"></textarea>
+            <label for="message">Message</label>
 
           </div>
           <div class="mb-3 mt-3">
-          <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
           </div>
         </form>
       </div>
 
       <div class="col-lg-5">
         <img class="img-fluid position-absolute w-30 h-90" src="img/contact1.png" width="400px;" height="500px"
-        style="object-fit: cover;">
+          style="object-fit: cover;">
 
       </div>
     </div>
@@ -520,13 +619,37 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element',
+      {
+        strings: ['<i>Yatra ka saathi bhi, Jeevan ka raahi bhi.</i> '],
+        typeSpeed: 100,
+      });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
- 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const myModal = document.getElementById('exampleModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+  </script>
 </body>
 
 </html>
